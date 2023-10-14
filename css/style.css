@@ -1,0 +1,418 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+header{
+	background-image: url(../images/1stbg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 95.2%;
+	height: 100vh;
+	width: 100%;
+	background-color: #434242;
+}
+
+/*nav-style*/
+nav{
+	background: transparent;
+	height: 80px;
+	width: 100%;
+}
+
+.logo{
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 80px;
+	padding: 0px 100px;
+	cursor: pointer;
+	font-family: DansingScript;
+	font-style: italic;
+}
+
+.logo:hover{
+	color: #434242;
+	transition: 0.5s ease 0s;
+	transform: scale(1.1);
+}
+
+nav ul{
+	float: right;
+	margin-right: 70px;
+}
+
+nav ul li{
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 2px;
+	line-height: 80px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 7px 13px;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav ul li a.active, nav ul li a:hover{
+	background: #434242;
+	transition: .5s;
+}
+
+.checkbtn{
+	color: white;
+	font-size: 30px;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #FFFFFF;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0px;
+		line-height: 20px;
+	}
+	nav ul li a{
+		font-size: 20px;
+		background: none;
+		color: #434242;
+	}
+	a:hover, a.active{
+		background: none;
+		color: #FFFFFF;
+	}
+	#check:checked ~ ul{
+		left: 0px;
+	}
+}
+
+@media (max-width: 320px){
+	label.logo{
+		font-size: 25px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+}
+/*End*/
+
+
+
+header .in_text{
+	margin: auto auto;
+}
+
+header .in_text a{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+ .in_text .p1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 45px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	margin-top: 15%;
+}
+
+.in_text h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 65px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 375px){
+		.in_text h3{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 45px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		color: white;
+	}
+}
+
+.in_text .p2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: white;
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+.in_text button{
+	background-color: transparent;
+	border-radius: 5px;
+	border-color: white;
+	padding: 5px 10px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.in_text button:hover{
+	background-color: #434242;
+}
+
+
+
+
+
+#about-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #434242;
+	padding: 5px 42px;
+} 
+
+#about-us div img{
+	display: flex;
+	width: 120%;
+}
+
+#about-us div p{
+	color: white;
+	width: 50%;
+	line-height: 30px;
+	margin-left: 30%;
+}
+
+
+
+
+
+/*gallery*/
+#gallery{
+	margin: 50px auto;
+	padding-left: 10%;
+}
+
+.box{
+	width: 300px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5%;
+	padding-left: 10px;
+	transform: translate(-50%,-50);
+}
+
+.slide-img{
+	height: 400px;
+	position: relative;
+}
+
+.slide-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
+.detail-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+.type{
+	display: flex;
+	flex-direction: column;
+}
+
+.type a{
+	color: #222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+	text-decoration: none;
+}
+
+.type span{
+	color: rgba(26, 26, 26, 0.5);
+}
+
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-family: poppins;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+}
+
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(94, 91, 78, 0.86);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+.order-btn{
+	width: 160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	color: #252525;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+}
+
+.order-btn:hover{
+	color: #FFFFFF;
+	background-color: #434242;
+	transition: all ease 0.3s;
+}
+
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation: fade 0.5s;
+}
+
+
+
+/*footer*/
+.contact{
+	background-color: #434242;
+	width: 100%;
+	padding-top: 2.5%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.socialicons a{
+	font-size: 20px;
+	padding: 0px 15px;
+	background-color: white;
+	border-radius: 50rem;
+	color: #434242;
+	border-style: dotted;
+	border-color: #434242;
+}
+
+.socialicons a:hover{
+	background-color: rgba(26, 26, 26, 0.5);
+}
+
+.footerbottom{
+	padding-top: 20px;
+	color: white;
+}
+
+
+@media (max-width: 1024px){
+	#gallery{
+		margin: 30px auto;
+		padding-left: 3%;
+	}
+
+}
+
+@media (max-width: 768px){
+	#gallery{
+		margin: 25px auto;
+		padding-left: 6%;
+	}
+
+}
+
+@media (max-width: 425px){
+	#gallery{
+		margin: 20px auto;
+		padding-left: 15%;
+	}
+
+}
+
+@media (max-width: 375px){
+	#gallery{
+		margin: 15px auto;
+		padding-left: 10%;
+	}
+
+}
+
+@media (max-width: 320px){
+	#gallery{
+		margin: 15px auto;
+		padding-left: 3%;
+	}
+
+}
